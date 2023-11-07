@@ -31,7 +31,7 @@ export const getAllEvents = () => {
   return async (dispatch) => {
     try {
       dispatch({ type: GET_ALL_EVENTS_REQUEST });
-      let dataUrl = "/api/events/free";
+      let dataUrl = "/api/events/all";
       let response = await Axios.get(dataUrl);
       dispatch({ type: GET_ALL_EVENTS_SUCCESS, payload: response.data });
     } catch (error) {
