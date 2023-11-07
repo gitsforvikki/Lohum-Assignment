@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  @apply pt-6 scroll-px-48 px-5 sm:px-6 lg:px-24 xl:px-40 min-w-full
+}
