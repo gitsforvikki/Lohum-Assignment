@@ -38,7 +38,7 @@ router.post('/upload' ,[
 
 
 //get ALL events
-router.get('/free', async(request , response)=>{
+router.get('/all', async(request , response)=>{
    try{
         //check if any events is available or not
         let events = await Event.find({});
